@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./prop-binding.component.css']
 })
 export class PropBindingComponent {
-
+public name='Angular16'
+public isDisabled:boolean=false;
 }

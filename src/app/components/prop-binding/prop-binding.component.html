@@ -1,1 +1,14 @@
 <h1>prop-binding works!</h1>
+
+<input type="text" value="Angular">
+
+<input type="text" value={{name}} id="name">
+
+<input type="text" [value]="name" [id]="name">
+
+<hr>
+<input type="text" name="name" value={{name}} [id]="name" disabled>
+
+<input type="text" [value]="name" [name]="name" [id]="name" disabled={{isDisabled}}>
+
+<input type="text" [name]="name" [value]="name" [id]="name" [disabled]="isDisabled">

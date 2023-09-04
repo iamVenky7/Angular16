@@ -1,0 +1,18 @@
+<h2>classbindind !</h2>
+
+<p class="textColor">Text color</p>
+<p class="textSize">Text Size</p>
+
+<p [class]="myText">Class Binding</p>
+
+<!-- multiple -->
+<p>Multiple grpClasses</p>
+<p [ngClass]="grpClasses">Class Binding</p>
+
+<p>Class binding with ternary operator</p>
+
+<p [class]="isRequired ? 'textColor': 'textSize'"> Class with ternanry</p>
+
+<p>class with .operator</p>
+
+<p [class.textSize]="isRequired"> Class with . operator</p>
