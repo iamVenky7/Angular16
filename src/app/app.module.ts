@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
 import { PropBindingComponent } from './components/prop-binding/prop-binding.component';
 import { ClassbindindComponent } from './components/classbindind/classbindind.component';
+import { StylebindingComponent } from './components/stylebinding/stylebinding.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ClassbindindComponent } from './components/classbindind/classbindind.co
     HomeComponent,
     InterpolationComponent,
     PropBindingComponent,
-    ClassbindindComponent
+    ClassbindindComponent,
+    StylebindingComponent
   ],
   imports: [
     BrowserModule,
