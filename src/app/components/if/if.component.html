@@ -1,0 +1,20 @@
+<h1> <u>If Directive</u></h1>
+
+<p *ngIf="check" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nemo velit itaque ipsam perferendis quis molestias expedita nobis saepe voluptate reprehenderit possimus nulla cumque. Quidem quaerat, dolore ratione reprehenderit, cupiditate officia adipisci unde sint sapiente cum est dignissimos perferendis deleniti veritatis! Vitae deserunt odio et voluptas amet dolor totam fugit.</p>
+
+<p *ngIf="check; then tBlock else eBlock">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias repellendus rerum error nemo sunt officia sapiente doloremque, suscipit et minima tempora voluptatibus est praesentium illo similique cumque temporibus amet ab dolorum eos placeat soluta odit? Perspiciatis quos sit dolor consequatur ullam dolorem architecto odio quo tenetur, nulla rerum corporis non?</p>
+
+<ng-template #eBlock>
+  <h3>Else Block</h3>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, eius.</p>
+</ng-template>
+
+
+<ng-template #tBlock>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ratione sapiente, quos quaerat maxime eveniet quis laudantium rerum sequi totam dicta dolores ullam esse obcaecati architecto doloremque itaque perferendis quibusdam?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore perferendis soluta vero quia fugit repellat nobis obcaecati? Quo aut ullam reprehenderit iste enim neque autem sequi voluptate fugiat provident.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorum iste incidunt perferendis excepturi aspernatur culpa nihil mollitia, temporibus dolores, ex modi corrupti eum fugit soluta aliquid obcaecati tenetur dignissimos?
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorum iste incidunt perferendis excepturi aspernatur culpa nihil mollitia, temporibus dolores, ex modi corrupti eum fugit soluta aliquid obcaecati tenetur dignissimos?<br>
+
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque necessitatibus ad soluta itaque modi ea doloribus minima hic iusto, architecto voluptas atque, sunt corrupti similique esse nihil dignissimos, ipsam ipsum. <br>
+</ng-template>

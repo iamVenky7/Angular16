@@ -13,6 +13,7 @@ import { EventbindingComponent } from './components/eventbinding/eventbinding.co
 import { TwowayComponent } from './components/twoway/twoway.component';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 import { FormsModule } from '@angular/forms';
+import { IfComponent } from './components/if/if.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     StylebindingComponent,
     EventbindingComponent,
     TwowayComponent,
+    IfComponent,
   ],
   imports: [
     BrowserModule,
