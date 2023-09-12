@@ -10,6 +10,9 @@ import { PropBindingComponent } from './components/prop-binding/prop-binding.com
 import { ClassbindindComponent } from './components/classbindind/classbindind.component';
 import { StylebindingComponent } from './components/stylebinding/stylebinding.component';
 import { EventbindingComponent } from './components/eventbinding/eventbinding.component';
+import { TwowayComponent } from './components/twoway/twoway.component';
+import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,16 @@ import { EventbindingComponent } from './components/eventbinding/eventbinding.co
     PropBindingComponent,
     ClassbindindComponent,
     StylebindingComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    TwowayComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularMaterialModule, FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

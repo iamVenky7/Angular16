@@ -1,0 +1,17 @@
+<h1><u>Two way data binding</u></h1>
+
+<input type="text" #name placeholder="enter your name">
+<input type="text" #course placeholder="Enter couse">
+<input type="text" #fee placeholder="enter fee">
+<hr>
+<button mat-button color="primary" (click)="onClick(name.value)">My Name</button>
+<button mat-flat-button color="primary" (click)="onClick1(course.value)">My Course</button>
+<button mat-raised-button color="primary" (click)="onClick2(fee.value)">My Fee</button>
+
+<h3>Name : {{myName}}</h3>
+<h3>Course : {{myCourse}}</h3>
+<h3>Fee : {{myFee}}</h3>
+
+
+<input type="text" [(ngModel)] = 'myText'>
+<h3>My Text: {{myText}}</h3>
