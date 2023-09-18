@@ -1,0 +1,22 @@
+<h2><u>Switch</u></h2>
+<input type="text" [(ngModel)]="myChoice">
+<div [ngSwitch]="myChoice">
+  <div *ngSwitchCase="'one'">
+    <h2>Sunday</h2>
+  </div>
+  <div *ngSwitchCase="'two'">
+    <h2>monday</h2>
+  </div>
+  <div *ngSwitchCase="'three'">
+    <h2>Tuesday</h2>
+  </div>
+  <div *ngSwitchCase="'four'">
+    <h2>Wednesday</h2>
+  </div>
+  <div *ngSwitchCase="'five'">
+    <h2>Thursday</h2>
+  </div>
+  <div *ngSwitchDefault>
+    <h2>Choice mismatch</h2>
+  </div>
+</div>
