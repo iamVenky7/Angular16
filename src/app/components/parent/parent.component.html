@@ -1,0 +1,6 @@
+<h1>Parent component</h1>
+
+<!-- <p>{{pData}}</p> -->
+<h3>Child data : {{cData}}</h3>
+<app-child [fromParent] = 'pData' (fromChild)="cData = $event"></app-child>
+

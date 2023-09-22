@@ -15,6 +15,9 @@ import { AngularMaterialModule } from './modules/angular-material/angular-materi
 import { FormsModule } from '@angular/forms';
 import { IfComponent } from './components/if/if.component';
 import { SwitchComponent } from './components/switch/switch.component';
+import { ForComponent } from './components/for/for.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,9 @@ import { SwitchComponent } from './components/switch/switch.component';
     TwowayComponent,
     IfComponent,
     SwitchComponent,
+    ForComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
