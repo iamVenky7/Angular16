@@ -19,6 +19,8 @@ import { ForComponent } from './components/for/for.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CourseNameComponent } from './components/course-name/course-name.component';
+import { CourseDetailsComponent } from './components/course-details/course-details.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     ParentComponent,
     ChildComponent,
     PageNotFoundComponent,
+    CourseNameComponent,
+    CourseDetailsComponent,
   ],
   imports: [
     BrowserModule,
