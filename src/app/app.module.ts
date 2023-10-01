@@ -21,6 +21,8 @@ import { ChildComponent } from './components/child/child.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CourseNameComponent } from './components/course-name/course-name.component';
 import { CourseDetailsComponent } from './components/course-details/course-details.component';
+import { CourseService } from './services/course.service';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -45,9 +47,11 @@ import { CourseDetailsComponent } from './components/course-details/course-detai
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule, FormsModule
+    AngularMaterialModule, FormsModule, 
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+ 

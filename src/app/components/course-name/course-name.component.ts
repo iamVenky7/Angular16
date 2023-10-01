@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CourseService } from 'src/app/services/course.service';
 
 @Component({
   selector: 'app-course-name',
@@ -6,10 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./course-name.component.css']
 })
 export class CourseNameComponent {
+  public course = [];
 
-  public course = [
-    {id:1, name:'Angular', fee:10000},
-    {id:2, name:'Angular Material', fee:8000},
-    {id:3, name:'Bootstrap', fee:5000},
-  ]
+  // constructor(private _courseService : CourseService){
+  //   this.course = _courseService.getCourseInfo()
+  //   this for raw data  returning from service
+  // }
+ 
+   constructor(private _courseService:CourseService){
+    this._courseService.getCourseInfo().subscribe(res => this.course = res)
+   }
+
 }
