@@ -7,8 +7,12 @@ import { CourseService } from 'src/app/services/course.service';
   styleUrls: ['./course-details.component.css'],
 })
 export class CourseDetailsComponent {
-  constructor(private _courseService: CourseService){
-    this._courseService.getCourseInfo().subscribe(res => this.course = res)
-  }
   public course = [];
+  public errMsg = ''
+  constructor(private _courseService: CourseService) {
+    this._courseService.getCourseInfo().subscribe(
+      (res) => (this.course = res),
+      (err) => (this.errMsg = err)
+    );
+  }
 }

@@ -8,14 +8,15 @@ import { CourseService } from 'src/app/services/course.service';
 })
 export class CourseNameComponent {
   public course = [];
-
+  public errMsg=''
   // constructor(private _courseService : CourseService){
   //   this.course = _courseService.getCourseInfo()
   //   this for raw data  returning from service
   // }
  
    constructor(private _courseService:CourseService){
-    this._courseService.getCourseInfo().subscribe(res => this.course = res)
+    this._courseService.getCourseInfo().subscribe(res => this.course = res,
+      err => this.errMsg = err)
    }
 
 }
