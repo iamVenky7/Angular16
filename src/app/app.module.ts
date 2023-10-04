@@ -22,7 +22,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CourseNameComponent } from './components/course-name/course-name.component';
 import { CourseDetailsComponent } from './components/course-details/course-details.component';
 import { CourseService } from './services/course.service';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { SelectedItemComponent } from './components/selected-item/selected-item.component'
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { HttpClientModule } from '@angular/common/http'
     PageNotFoundComponent,
     CourseNameComponent,
     CourseDetailsComponent,
+    SelectedItemComponent,
   ],
   imports: [
     BrowserModule,

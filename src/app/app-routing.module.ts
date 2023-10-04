@@ -6,33 +6,42 @@ import { IfComponent } from './components/if/if.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CourseDetailsComponent } from './components/course-details/course-details.component';
+import { SelectedItemComponent } from './components/selected-item/selected-item.component';
 
 const routes: Routes = [
-
   {
-    path:'',
-    redirectTo:'/home',
-    pathMatch:'full'
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
   {
-    path:"if", component:IfComponent
+    path: 'if',
+    component: IfComponent,
   },
   {
-    path:"interpolation", component:InterpolationComponent
+    path: 'interpolation',
+    component: InterpolationComponent,
   },
   {
-    path:"home", component:HomeComponent
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path:"courseName", component:CourseNameComponent
+    path: 'courseName',
+    component: CourseNameComponent,
   },
   {
-    path:"courseDetails", component:CourseDetailsComponent
+    path: 'courseDetails',
+    component: CourseDetailsComponent,
   },
   {
-    path:'**',component:PageNotFoundComponent
+    path: 'selectedItem/:id',
+    component: SelectedItemComponent,
   },
-
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+  },
 ];
 
 @NgModule({
